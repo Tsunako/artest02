@@ -7,13 +7,24 @@
     <a-scene embedded arjs>
         
         <a-assets>
-        <a-asset-item id="obj" src="model/Cake_01.obj"></a-asset-item>
-        <a-asset-item id="mtl" src="model/Cake_01.mtl"></a-asset-item>
-    　　　　　　　</a-assets>
+            <a-asset-item id="obj" src="model2/rocket.obj"></a-asset-item>   <!-- objファイル -->
+            <a-asset-item id="mtl" src="model2/rocket.mtl"></a-asset-item>   <!-- mtlファイル -->
+        </a-assets>
         
         <a-marker preset="hiro">
-            <a-obj-model id="cake" src="#obj" mtl="#mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
-            <a-obj-model id="cake" src="obj" mtl="mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
+           <a-obj-model
+                    src="#obj"
+                    mtl="#mtl"
+                    scale="0.005 0.005 0.005"
+                    position="0 0.5 0">
+                </a-obj-model>
+                
+                <a-obj-model
+                    src="obj"
+                    mtl="mtl"
+                    scale="0.005 0.005 0.005"
+                    position="0 0.5 0">
+                </a-obj-model>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
