@@ -18,18 +18,17 @@
     <a-assets>
       <a-asset-item id="obj" src="model2/rocket.obj"></a-asset-item>   <!-- objファイル -->
       <a-asset-item id="mtl" src="model2/rocket.mtl"></a-asset-item>   <!-- mtlファイル -->
-      <a-asset-item id="c_mtl" src="model/Cake_01.mtl"></a-asset-item>
-      <a-asset-item id="c_obj" src="model/Cake_01.obj"></a-asset-item>
+      <a-asset-item id="c_obj" src="b_cake.obj"></a-asset-item>
+      <a-asset-item id="c_mtl" src="b_cake.mtl"></a-asset-item>
     </a-assets>
 
     <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
     <a-marker preset="hiro">
-      <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
-<!--       <a-box position="0 0.5 0" wireframe="true"></a-box> -->
+  
     <a-obj-model
         src="#c_obj"
         mtl="#c_mtl"
-        scale="0.005 0.005 0.005"
+        scale="0.05 0.05 0.05"
         position="0 0.5 0">
         <a-animation
           attribute="rotation"
