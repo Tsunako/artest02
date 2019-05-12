@@ -20,6 +20,7 @@
       <a-asset-item id="c_mtl" src="10868_birthday-cake_v3.mtl"></a-asset-item>
       <a-asset-item id="obj" src="model2/rocket.obj"></a-asset-item>   
       <a-asset-item id="mtl" src="model2/rocket.mtl"></a-asset-item>  
+       <a-asset-item id="b_dae" src="cake.dae"></a-asset-item>
     </a-assets>
 
     <a-marker preset="hiro">
@@ -34,12 +35,16 @@
     <!-- マーカーを登録（プリセットされている「kanji」マーカー） -->
     <a-marker preset="kanji">
       <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
-      <a-obj-model
+<!--       <a-obj-model
         src="#c_obj"
         mtl="#c_mtl"
         scale="0.005 0.005 0.005"
         position="0 0.5 0">
-      </a-obj-model>
+      </a-obj-model> -->
+      <a-collada-model src="#b_dae"
+                       scale="1 1 1"
+                       position="0 0.5 0">
+        </a-collada-model>
     </a-marker>
 
     <!-- AR用のカメラを置く -->
