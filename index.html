@@ -5,11 +5,14 @@
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
+        
+        <a-assets>
+        <a-asset-item id="obj" src="model/Cake_01.obj"></a-asset-item>
+        <a-asset-item id="mtl" src="model/Cake_01.mtl"></a-asset-item>
+    　　　　　　　</a-assets>
+        
         <a-marker preset="hiro">
-            <a-box position="0 0.5 0" wireframe="true">
-                <a-animation attribute="position" from="0 0.5 0" to="0 2.5 0" dur="5000" repeat="indefinite">
-                </a-animation>
-            </a-box>
+            <a-obj-model id="cake" src="#obj" mtl="#mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
